@@ -1,0 +1,16 @@
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# (Optional) Uncomment the following if you want to ignore the compiled PDF:
+# *.pdf
+
+# macOS system files
+.DS_Store
+
+# Other system files
+Thumbs.db
