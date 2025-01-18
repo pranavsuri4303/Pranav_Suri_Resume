@@ -55,7 +55,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       #1 & #2 \\  % Removed \textbf since we'll handle it in the content
       \textit{\small#3} & \textit{\small #4} \\
@@ -114,30 +114,35 @@
     }}
 \end{itemize}
 
-% %-----------EDUCATION-----------
-% \section{Education}
-%   \resumeSubHeadingListStart
-%     \resumeSubheading
-%       {University of Waterloo}{Waterloo, Canada}
-%       {Bachelor of Applied Science in Computer Engineering, Minor in Economics}{Apr. 2027}
-%     \resumeSubheading
-%       {British School Jakarta}{Jakarta, Indonesia}
-%       {IB Diploma \& IGCSE}{Spring 2021}
-%   \resumeSubHeadingListEnd
+
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
+  
   \resumeSubheading
-  {\textbf{Ecobee} $|$ \emph{Swift, Obhjective-C, GraphQL}}{Aug. 2023 -- Present}
-  {Software Engineer}{Remote}
-  \resumeItemListStart
-  \resumeItem{Developed ActivityKit live activity prototype with GraphQL subscriptions for real-time home monitoring alerts.}
-  \resumeItem{Eliminated 20+ redundant feature flags and established documentation protocol to improve codebase efficiency.}
-  \resumeItem{Implemented 11 SwiftUI screens for newly launched smart doorbell product and created 5+ shared UI components for the design system.}
-  \resumeItemListEnd
+    {\textbf{Ecobee} $|$ \emph{Swift, Obhjective-C, GraphQL}}{Apr. 2024 -- Present}
+    {Software Engineer}{Remote}
+    \resumeItemListStart
+      \resumeItem{Migrated legacy asynchronous code from PromiseKit to Swift’s async/await pattern, streamlining data flow and resolving concurrency bugs across 15+ SwiftUI screens.}
+      \resumeItem{Integrated Generac suite functionality into the Eco+ platform with features like grid outage protection and amplitude event handling. Identified and resolved edge-case bugs to ensure seamless operation across connected devices.}
+      \resumeItem{Diagnosed and resolved 10+ high-priority bugs, including UI rendering issues, API failures, and incorrect data mappings, improving system stability and user experience.}
+      \resumeItem{Refactored shared UI components and improved internal design system tooling, reducing code duplication by 30\%, preventing regressions, and accelerating feature delivery.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {\textbf{CourtIQ} $|$ \emph{Swift, Golang, Javascript, GraphQL, MongoDB $|$ \href{https://github.com/CourtIQ/courtiq-ios}{\color{linkblue}\faGithub}
+    }}{2023 -- Present}
+    {Founder and Engineer}{Remote}
+    \resumeItemListStart
+    \resumeItem{Designed a scalable backend architecture with Golang, Apollo Federation, and MongoDB, managing 5+ microservices.}
+    \resumeItem{Automated CI/CD pipelines with Docker, Makefile, and GCP, deploying seamlessly to Google Cloud Run.}
+      \resumeItem{Developed a modular design system in SwiftUI and integrated Apollo Client for GraphQL code generation, ensuring consistent UI/UX and efficient backend communication in iOS apps.}      
+      \resumeItem{Integrated Firebase Auth and FCM for secure user authentication and real-time notifications, while enabling advanced search with MongoDB Atlas Search for faster data retrieval.}
+      \resumeItem{Managed end-to-end development as the sole contributor, owning backend services, iOS app development, and Figma-based design systems for a cohesive project delivery.}
+    \resumeItemListEnd
 
     \resumeSubheading
       {\textbf{Ecobee} $|$ \emph{Swift, Obhjective-C, GraphQL}}{Aug. 2023 -- Present}
@@ -145,8 +150,8 @@
       \resumeItemListStart
       \resumeItem{Developed ActivityKit live activity prototype with GraphQL subscriptions for real-time home monitoring alerts.}
       \resumeItem{Eliminated 20+ redundant feature flags and established documentation protocol to improve codebase efficiency.}
-      \resumeItem{Implemented 11 SwiftUI screens for newly launched smart doorbell product and created 5+ shared UI components for the design system.}
-      \resumeItemListEnd
+      \resumeItem{Developed 11 SwiftUI screens for a smart doorbell product and 5+ shared UI components for the design system.}
+    \resumeItemListEnd
       
     \resumeSubheading
       {\textbf{1Password} $|$ \emph{Swift, Objective-C, Rust, Azure}}{Sep. 2022 -- Jan. 2023}
@@ -155,49 +160,81 @@
       \resumeItem{Developed key user lifecycle features in Swift, Objective-C, and Rust, improving user onboarding and retention metrics.}
       \resumeItem{Built cross-platform QR code authentication system in Swift and Rust during company hackathon.}
       \resumeItem{Collaborated with product and design teams to scope features and plan sprints for a 20-person engineering team.}
-      \resumeItemListEnd
+    \resumeItemListEnd
     
-      \resumeSubheading
+    \resumeSubheading
       {\textbf{Capybara (Pre-seed Startup)} $|$ \emph{Swift, Golang, PostgreSQL, AWS}}{Aug. 2022 -- Oct. 2022}
       {Lead iOS Developer}{Singapore}
       \resumeItemListStart
         \resumeItem{Spearheaded development of iOS application, translating $>$20 Figma frames into code using SwiftUI.}
         \resumeItem{Introduced atomic UI design principles and refactored legacy SwiftUI code to enhance application performance and maintainability, leading to more efficient and effective code reuse.}
-        \resumeItem{Built SPM networking library with local caching strategy, implementing MVVM pattern to manage API data flow and reduce server calls.}
+        \resumeItem{Created an SPM networking library with caching and MVVM, optimizing API data flow and reducing server calls.}
         \resumeItem{Assisted in development and bug fixes for RESTful API developed using Golang and PostgreSQL.}
-        \resumeItemListEnd
+      \resumeItemListEnd
 
     \resumeSubheading
       {\textbf{Autotrader.ca} $|$ \emph{Swift, Objective-C, PagerDuty, New Relic, Azure, Cocoapods }}{Jan. 2022 -- May 2022}
       {iOS Engineering Intern}{Toronto, Canada}
       \resumeItemListStart
-      \resumeItem{Fixed iPad search sorting and built remote config caching system to optimize feature flag performance.}
-      \resumeItem{Used feature flags to track system appearance preferences, driving the implementation of dark mode support.}
-      \resumeItem{Developed autofill features for registration and subscriptions, resulting in 5\% increase in user conversion.}
-      \resumeItem{Executed UI tests and biweekly regression testing, while monitoring system health using New Relic and PagerDuty.}
+        \resumeItem{Fixed iPad search sorting and built remote config caching system to optimize feature flag performance.}
+        \resumeItem{Used feature flags to track system appearance preferences, driving the implementation of dark mode support.}
+        \resumeItem{Developed autofill features for registration and subscriptions, resulting in 5\% increase in user conversion.}
+        \resumeItem{Executed UI tests and biweekly regression testing, while monitoring system health using New Relic and PagerDuty.}
       \resumeItemListEnd
-
-
-
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
-\section{Projects}
+\section{Leadership \& Extracurricular}
     \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Tennis Score Keeping and Statistics} $|$ \emph{Swift, Firebase, GCP, Javascript}}{In Progress}
-          \resumeItemListStart
-            \resumeItem{Developed an iOS app with SwiftUI and Google Firebase aimed at tennis players allowing players to gather match statistics and analyze their game.}
-            \resumeItem{Applied atomic UI design and MVVM design pattern to improve efficiency and maintainability of the codebase.}
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
-          {\textbf{Movie TMDB} $|$ \emph{SwiftUI, Dart, Kotlin}}{Jan. 2021}
-          \resumeItemListStart
-            \resumeItem{Developed an app on 3 different platforms with the help of TMDB API to compare the practicality of the 3 frameworks.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+    \resumeSubheading
+    {\textbf{Sigma Chi(Leadership Fraternity)}}{Jan 2023 – Present}
+    {President}{University of Waterloo}
+    \resumeItemListStart
+    \resumeItem{Managed a \$$1,000,000$ property, overseeing the maintenance, servicing, and overall operational efficiency while overseeing key improvement projects.}
+    \resumeItem{Administered a termly budget of ~\$$40,000$, allocating resources for essential upgrades and spearheading initiatives like a \$$20,000$ energy-efficient furnace installation to reduce costs and enhance sustainability.}
+    \resumeItem{Provided leadership and strategic oversight, fostering collaboration among members and alumni to drive property improvements and long-term sustainability.}
+  \resumeItemListEnd
 
+  \resumeSubheading
+    {\textbf{BSJ Eco Committee - Weather and Pollution Station Team}}{Fall 2019 – Spring 2021}
+    {Project Lead}{British School Jakarta}
+  \resumeItemListStart
+    \resumeItem{Curated documentation for troubleshooting and maintenance of \$$10,000$ weather and pollution station.}
+    \resumeItem{Implemented automation of data collection with the help of Python Selenium \& BeautifulSoup4.}
+    \resumeItem{Develop website and mobile app to provide live pollution and weather update along with predictions to community.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {\textbf{BSJ Eco Committee - Weather and Pollution Station Team}}{Fall 2019 – Spring 2021}
+    {Project Lead}{British School Jakarta}
+  \resumeItemListStart
+    \resumeItem{Participate in inter-school, local, national, and international competitions.}
+    \resumeItem{Doubles specialist, coach for HS varsity doubles team \& Assistant tournament director for monthly tournaments at HS.}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{TMDB movie Appd} $|$ \emph{Swift, Dart, Kotlin $|$ \href{https://github.com/pranavsuri4303/tmdb-declarative-ui}{\color{linkblue}\faGithub}
+    }}{January 2021}
+    \resumeItemListStart
+    \resumeItem{Built a movie app using SwiftUI, Jetpack Compose, and Flutter to compare declarative UI frameworks, displaying "Now Playing" and "Popular" movies via The Movie Database API.}
+    \resumeItem{Used MVVM architecture across all platforms to manage state and streamline development while analyzing the strengths and limitations of each framework.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+  %-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {\textbf{University of Waterloo}}{Waterloo, Canada}
+    {BSc, Minor in Economics}{Apr. 2026}
+  \resumeSubheading
+    {\textbf{British School Jakarta}}{Jakarta, Indonesia}
+    {IB Diploma \& IGCSE}{Spring 2021}
+\resumeSubHeadingListEnd
 %-------------------------------------------
 \end{document}
