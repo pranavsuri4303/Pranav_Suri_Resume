@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1737197449.97308 "/Users/pranavsuri/Documents/Pranav_Suri_Resume/main.tex" "main.pdf" "main" 1737197450.47711 0
-  "/Users/pranavsuri/Documents/Pranav_Suri_Resume/main.tex" 1737197449.82673 11390 4463965bbe773dd304b1e9159e69bcc2 ""
+["pdflatex"] 1737375585.71853 "/Users/pranavsuri/Documents/Pranav_Suri_Resume/main.tex" "main.pdf" "main" 1737375586.52594 0
+  "/Users/pranavsuri/Documents/Pranav_Suri_Resume/main.tex" 1737375585.5618 11392 d4d4c09d71d61baae4171c7b76989ea7 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -99,9 +99,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1729465194.065 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1729465184 8221428 c0a61f30c666ef6080e419757903da42 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "main.aux" 1737197450.42124 799 a84e2cf739cf429c658801debf98565b "pdflatex"
-  "main.out" 1737197450.42163 582 bd9ecf0edee7dcbdbc88e8f18df3bf45 "pdflatex"
-  "main.tex" 1737197449.82673 11390 4463965bbe773dd304b1e9159e69bcc2 ""
+  "main.aux" 1737375586.43502 799 a84e2cf739cf429c658801debf98565b "pdflatex"
+  "main.out" 1737375586.43654 582 bd9ecf0edee7dcbdbc88e8f18df3bf45 "pdflatex"
+  "main.tex" 1737375585.5618 11392 d4d4c09d71d61baae4171c7b76989ea7 ""
   (generated)
   "main.aux"
   "main.log"
